@@ -1,8 +1,4 @@
 import React from "react";
-import { BsFacebook } from "react-icons/bs";
-import { FaTwitter } from "react-icons/fa";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { AiFillYoutube } from "react-icons/ai";
 
 export default function Footer() {
   return (
@@ -16,7 +12,7 @@ export default function Footer() {
                 <a
                   href="#!"
                   type="button"
-                  class="rounded-full border-1 bg-[#cfdaf9]  border-white text-white leading-normal uppercase hover:bg-blue-600  focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1"
+                  class="rounded-full border-1 bg-[#cfdaf9]  border-white text-white leading-normal uppercase hover:bg-blue-600  focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-10 h-10 m-1 p-2"
                 >
                   <svg
                     aria-hidden="true"
@@ -37,7 +33,7 @@ export default function Footer() {
                 <a
                   href="#!"
                   type="button"
-                  class="rounded-full border-1 bg-[#cfdaf9] border-white text-white leading-normal uppercase hover:bg-blue-600 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1"
+                  class="rounded-full border-1 bg-[#cfdaf9] border-white text-white leading-normal uppercase hover:bg-blue-600 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-10 h-10 m-1 p-2"
                 >
                   <svg
                     aria-hidden="true"
@@ -58,7 +54,7 @@ export default function Footer() {
                 <a
                   href="#!"
                   type="button"
-                  class="rounded-full border-1 bg-[#cfdaf9] border-white text-black leading-normal uppercase hover:bg-blue-600  focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1"
+                  class="rounded-full border-1 bg-[#cfdaf9] border-white text-black leading-normal uppercase hover:bg-blue-600  focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-10 h-10 m-1 p-2"
                 >
                   <svg
                     aria-hidden="true"
@@ -79,7 +75,7 @@ export default function Footer() {
                 <a
                   href="#!"
                   type="button"
-                  class="rounded-full border-1 bg-[#cfdaf9] border-white text-white leading-normal uppercase hover:bg-blue-600  focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1"
+                  class="rounded-full border-1 bg-[#cfdaf9] border-white hover:text-white leading-normal uppercase hover:bg-blue-600  focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-10 h-10 m-1 p-2"
                 >
                   <svg
                     set="footer"
@@ -94,7 +90,7 @@ export default function Footer() {
                     <title>Youtube</title>
                     <path
                       d="M12.35 5c1.34.008 6.125.06 7.462.42.86.231 1.538.913 1.768 1.78.39 1.465.416 4.415.418 4.802v.085c-.002.387-.028 3.337-.418 4.803a2.513 2.513 0 01-1.768 1.78c-1.374.37-6.391.414-7.566.42h-.495c-1.175-.006-6.192-.05-7.566-.42a2.513 2.513 0 01-1.769-1.78c-.376-1.413-.413-4.208-.417-4.752v-.187c.004-.545.041-3.339.417-4.752a2.513 2.513 0 011.769-1.78c1.336-.36 6.122-.411 7.462-.419zM9.952 9.07v5.948l5.227-2.973L9.953 9.07z"
-                      fill="#2B2B2B"
+                      fill="#"
                       fill-rule="evenodd"
                     ></path>
                   </svg>
