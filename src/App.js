@@ -1,10 +1,10 @@
 import './App.css';
-import CardTitle from './components/CardTitle';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <CardTitle />
+      <Navbar />
     </div>
   );
 }

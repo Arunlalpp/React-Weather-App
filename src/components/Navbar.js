@@ -9,6 +9,7 @@ import Navlinks from "./Navlinks";
 import CardContainer from "./CardContainer";
 import IndianMap from "./IndianMap";
 import Footer from "./Footer";
+import CardTitle from "./CardTitle";
 export default function Navbar() {
   return (
     <div>
