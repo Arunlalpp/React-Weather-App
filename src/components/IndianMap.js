@@ -1,12 +1,14 @@
 import React from "react";
 import CardTitle from "./CardTitle";
+import Footer from "./Footer";
+import SmallCard from "./SmallCard";
 
 export default function IndianMap() {
   return (
     <>
-      <div className=" bg-slate-500">
-        <div className="w-[53%] ml-[12.5%] bg-white rounded-lg">
-          <div className="p-4 rounded-lg">
+      <div className="bg-slate-500">
+        <div className="w-[53%] ml-[12.5%] ">
+          <div className="p-4 rounded-t-lg bg-white">
             <span className="text-black text-xl font-bold">
               Weather Across India
             </span>
@@ -19,6 +21,11 @@ export default function IndianMap() {
             </div>
           </div>
         </div>
+
+        <CardTitle />
+        <SmallCard />
+        <SmallCard />
+        <Footer />
       </div>
     </>
   );
