@@ -8,7 +8,6 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import Navlinks from "./Navlinks";
 import CardContainer from "./CardContainer";
 import IndianMap from "./IndianMap";
-import Footer from "./Footer";
 export default function Navbar() {
   return (
     <div>
