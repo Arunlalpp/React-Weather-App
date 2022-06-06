@@ -14,7 +14,7 @@ export default function VideoCardContainer({ title }) {
               />
             </div>
             <div className="mt-2">
-              <p className="text-[14px] hover:text-blue-500 cursor-pointer"></p>
+              <p className="text-[14px] hover:text-blue-500 cursor-pointer">This Plant in Australia Covers An Area Four Times the Size of New Delhi!</p>
             </div>
           </div>
           <div>
@@ -25,7 +25,7 @@ export default function VideoCardContainer({ title }) {
               />
             </div>
             <div className="mt-2">
-              <p className="text-[14px] hover:text-blue-500 cursor-pointer"></p>
+              <p className="text-[14px] hover:text-blue-500 cursor-pointer">Brazil Flooding Kills Dozens, Leaves Thousands Homeless</p>
             </div>
           </div>
           <div>
@@ -36,7 +36,7 @@ export default function VideoCardContainer({ title }) {
               />
             </div>
             <div className="mt-2">
-              <p className="text-[14px] hover:text-blue-500 cursor-pointer"></p>
+              <p className="text-[14px] hover:text-blue-500 cursor-pointer">Places Getting Dusty: Little-Known Potential Impact of Climate Change</p>
             </div>
           </div>
           <div>
@@ -47,7 +47,7 @@ export default function VideoCardContainer({ title }) {
               />
             </div>
             <div className="mt-2">
-              <p className="text-[14px] hover:text-blue-500 cursor-pointer"></p>
+              <p className="text-[14px] hover:text-blue-500 cursor-pointer">WATCH: Latest India Weather Forecast: June 6</p>
             </div>
           </div>
         </div>
