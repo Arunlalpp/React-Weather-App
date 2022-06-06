@@ -12,9 +12,9 @@ export default function Navbar() {
   return (
     <div>
       <div className="bg-[#005986]">
-        <div className="max-w-7xl m-auto p-2 flex flex-row items-center justify-between">
-          <div className="flex flex-row items-center">
-            <div className="w-[60px] h-[60px] fill-white">
+        <div className="max-w-7xl m-auto  flex flex-row items-center justify-between">
+          <div className="flex flex-row items-center ml-[0.7rem]">
+            <div className="w-[59px] h-[60px] fill-white">
               <svg
                 set="nav"
                 name="twc-logo"
@@ -32,29 +32,34 @@ export default function Navbar() {
                 ></path>
               </svg>
             </div>
-            <div className="w-[150px] h-[30px] px-3  border-r-2">
+            <div className="w-[150px] h-[30px] px-[0.6rem]  border-r-2 ml-[0.5rem] mt-[0.4rem]">
               <img src={HeaderImage} />
             </div>
-            <div className="w-[150px] px-4">
+            <div className="w-[154px] px-3">
               <img src={HeaderImg} />
             </div>
           </div>
           <div className="flex flex-row">
             <Searchbar />
           </div>
-          <div className="flex flex-row items-center justify-between">
-            <GiEarthAfricaEurope className="w-[30px] h-[80px] text-white" />
-            <div className="border-r-2 px-1 text-white text-[15px]">
+          <div className="flex flex-row items-center justify-between mr-[1.6rem] mt-1">
+            <div>
+            <GiEarthAfricaEurope className="w-[25px] h-[80px] text-white"/>
+            </div>
+            <div className="border-r-2 px-2 text-white text-[16px]">
               <h1>IN</h1>
             </div>
-            <span className="px-2 text-white">°C</span>
+            <span className="px-3 text-white">°C</span>
             <div>
-              <BiDownArrow className="w-[20px] h-[50px] text-white" />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"/></svg>
             </div>
-            <div className="pr-4">
-              <GiHamburgerMenu className="w-[30px] h-[80px] text-white" />
+            <div className="pl-7">
+              <GiHamburgerMenu className="w-[31px] h-[80px] text-white" />
             </div>
           </div>
+        </div>
+        <div className="bg-[#337A9E] p-2">
+          <span>.</span>
         </div>
       </div>
       <Navlinks />

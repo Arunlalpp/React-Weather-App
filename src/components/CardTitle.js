@@ -39,7 +39,7 @@ export default function CardTitle() {
   );
 
   return (
-    <div className="bg-white w-[53%] ml-[12.5%]">
+    <div className="bg-white w-[53%] ml-[12.5%] rounded-b-lg">
       <div className="p-4">
         <div className="grid grid-cols-4 gap-12">
           {data.data.map((item, i) => {
