@@ -2,6 +2,7 @@ import React from "react";
 import CardTitle from "./CardTitle";
 import Footer from "./Footer";
 import SmallCard from "./SmallCard";
+import VideoCardContainer from "./VideoCardContainer";
 
 export default function IndianMap() {
   return (
@@ -24,7 +25,7 @@ export default function IndianMap() {
 
         <CardTitle />
         <SmallCard />
-        <SmallCard />
+        <VideoCardContainer title="Top Video" />
         <Footer />
       </div>
     </>
