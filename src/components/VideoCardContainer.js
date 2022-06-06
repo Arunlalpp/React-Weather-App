@@ -3,7 +3,7 @@ import React from "react";
 export default function VideoCardContainer({ title }) {
   return (
     <>
-      <div className="bg-white rounded-lg mt-2  w-[53%] ml-[12.5%]">
+      <div className="bg-white rounded-lg mt-2  w-[52%] ml-[12.5%]">
         <span className="font-bold ml-5 mt-4">{title}</span>
         <div className="grid grid-cols-4 gap-4 p-5">
           <div>

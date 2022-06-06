@@ -4,7 +4,7 @@ import Carddata from "../Carddata";
 export default function SmallCard() {
   return (
     <>
-      <div className="bg-white rounded-lg mt-2  w-[53%] ml-[12.5%]">
+      <div className="bg-white rounded-lg mt-2  w-[52%] ml-[12.5%]">
         <span className="font-bold ml-5">Don't Miss</span>
         <div className="grid grid-cols-4 gap-4 p-5">
           {Carddata.cardData.map((item) => {

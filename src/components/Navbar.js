@@ -3,7 +3,6 @@ import Searchbar from "./Searchbar";
 import HeaderImg from "../Images/header-1.png";
 import HeaderImage from "../Images/header-2.png";
 import { GiEarthAfricaEurope } from "react-icons/gi";
-import { BiDownArrow } from "react-icons/bi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Navlinks from "./Navlinks";
 import CardContainer from "./CardContainer";
@@ -51,7 +50,18 @@ export default function Navbar() {
             </div>
             <span className="px-3 text-white">°C</span>
             <div className="w-[17px] h-[19px] fill-white">
-            <svg set="ui" name="triangle-down" class="styles--buttonIcon--nMAqA Icon--icon--3wCKh" data-testid="Icon" aria-hidden="true" role="img" viewBox="0 0 24 24"><title>Arrow down</title><path d="M23.765 5.167h-23.53l11.75 13.666 11.779-13.666z"></path></svg>
+              <svg
+                set="ui"
+                name="triangle-down"
+                class="styles--buttonIcon--nMAqA Icon--icon--3wCKh"
+                data-testid="Icon"
+                aria-hidden="true"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <title>Arrow down</title>
+                <path d="M23.765 5.167h-23.53l11.75 13.666 11.779-13.666z"></path>
+              </svg>
             </div>
             <div className="pl-5">
               <GiHamburgerMenu className="w-[31px] h-[80px] text-white" />

@@ -8,7 +8,7 @@ export default function IndianMap() {
   return (
     <>
       <div className="bg-slate-500">
-        <div className="w-[53%] ml-[12.5%] ">
+        <div className="w-[52%] ml-[12.5%] ">
           <div className="p-4 rounded-t-lg bg-white">
             <span className="text-black text-xl font-bold">
               Weather Across India

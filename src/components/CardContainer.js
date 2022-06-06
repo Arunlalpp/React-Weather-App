@@ -69,7 +69,7 @@ export default function CardContainer() {
             </div>
           </div>
         </div>
-        <div className="bg-white rounded-lg w-3/5  h-[15%]">
+        <div className="bg-white rounded-lg w-[64%]  h-[15%]">
           <div className="p-5">
             <span className="font-bold text-lg mb-0 mt-4 mr-4">Stay Safe</span>
             <img src="https://s.w-x.co/promo-modules-units-features.png?crop=2.85:1&width=320&format=pjpg&auto=webp&quality=60" />
