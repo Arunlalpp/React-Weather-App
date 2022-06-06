@@ -5,7 +5,7 @@ import { BsCloudSun } from "react-icons/bs";
 export default function Searchbar() {
   return (
     <div class="flex">
-      <div class="mb-3 xl:w-96 group mt-[1rem] mr-[rem]">
+      <div class="mb-3 xl:w-96 group mt-[1rem] pb-1">
         <div class="input-group relative flex items-stretch w-full z-10 pb-1">
           <input
             type="search"
@@ -13,7 +13,7 @@ export default function Searchbar() {
             placeholder="Search City or Postcode "
           />
           <div className="absolute text-white f left-[92%] top-[28%]">
-            <VscSearch c/>
+            <VscSearch c />
           </div>
         </div>
         <div className="bg-white rounded-lg group-hover:block hidden absolute w-[26%] mt-1">

@@ -35,31 +35,31 @@ export default function Navbar() {
             <div className="w-[150px] h-[30px] px-[0.6rem]  border-r-2 ml-[0.5rem] mt-[0.4rem]">
               <img src={HeaderImage} />
             </div>
-            <div className="w-[154px] px-3">
+            <div className="w-[155px] px-4 h-auto">
               <img src={HeaderImg} />
             </div>
           </div>
           <div className="flex flex-row">
             <Searchbar />
           </div>
-          <div className="flex flex-row items-center justify-between mr-[1.6rem] mt-1">
+          <div className="flex flex-row items-center justify-between mr-[2rem] mt-1">
             <div>
-            <GiEarthAfricaEurope className="w-[25px] h-[80px] text-white"/>
+              <GiEarthAfricaEurope className="w-[28px] h-[80px] text-white" />
             </div>
             <div className="border-r-2 px-2 text-white text-[16px]">
               <h1>IN</h1>
             </div>
             <span className="px-3 text-white">°C</span>
-            <div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"/></svg>
+            <div className="w-[17px] h-[19px] fill-white">
+            <svg set="ui" name="triangle-down" class="styles--buttonIcon--nMAqA Icon--icon--3wCKh" data-testid="Icon" aria-hidden="true" role="img" viewBox="0 0 24 24"><title>Arrow down</title><path d="M23.765 5.167h-23.53l11.75 13.666 11.779-13.666z"></path></svg>
             </div>
-            <div className="pl-7">
+            <div className="pl-5">
               <GiHamburgerMenu className="w-[31px] h-[80px] text-white" />
             </div>
           </div>
         </div>
         <div className="bg-[#337A9E] p-2">
-          <span>.</span>
+          <span className="text-[#337A9E]">.</span>
         </div>
       </div>
       <Navlinks />

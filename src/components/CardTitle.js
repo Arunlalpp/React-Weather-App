@@ -14,10 +14,12 @@ export default function CardTitle() {
               <>
                 <div className="">
                   <div>
-                    <img className="rounded-lg h-[15vh]"src={item.image} />
+                    <img className="rounded-lg h-[15vh]" src={item.image} />
                   </div>
                   <div className="mt-3">
-                    <p className="text-[14px] hover:text-blue-500 cursor-pointer">{item.title}</p>
+                    <p className="text-[14px] hover:text-blue-500 cursor-pointer">
+                      {item.title}
+                    </p>
                   </div>
                 </div>
               </>

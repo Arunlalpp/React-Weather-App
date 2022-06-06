@@ -3,10 +3,10 @@ import React from "react";
 export default function CardContainer() {
   return (
     <div className=" bg-slate-500">
-      <div className="flex flex-row w-3/4 m-auto py-2 gap-3">
+      <div className="flex flex-row w-3/4 m-auto py-2 gap-3 pt-3">
         <div class="pt-3 max-w-6xl m-auto flex flex-row bg-white rounded-lg">
           <div class="rounded-lg shadow-lg  max-w-2xl p-3">
-            <h2 className="text-black text-xl font-bold">Top Stories</h2>
+            <h2 className="text-black text-xl font-bold pb-4">Top Stories</h2>
             <div>
               <img
                 className="rounded-lg"
@@ -33,7 +33,7 @@ export default function CardContainer() {
               </button>
             </div>
           </div>
-          <div class="shadow-lg  p-3 mt-6 max-w-[22%]">
+          <div class="shadow-lg  p-3 mt-10 max-w-[22%]">
             <div>
               <img
                 className="rounded-lg"
