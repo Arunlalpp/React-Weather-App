@@ -17,7 +17,7 @@ export default function CardTitle() {
                     <img className="rounded-lg h-[15vh]" src={item.image} />
                   </div>
                   <div className="mt-3">
-                    <p className="text-[14px] hover:text-blue-500 cursor-pointer">
+                    <p className="md:text-[14px] text-[10px] hover:text-blue-500 cursor-pointer">
                       {item.title}
                     </p>
                   </div>
@@ -52,7 +52,7 @@ export default function CardTitle() {
                     <div>
                       <img className="rounded-lg h-[15vh]" src={item.image} />
                     </div>
-                    <div className="mt-3 hover:text-blue-500 cursor-pointer">
+                    <div className="mt-3 hover:text-blue-500 cursor-pointer md:text-[14px] text-[10px]  ">
                       <p>{item.title}</p>
                     </div>
                   </div>

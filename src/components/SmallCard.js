@@ -6,7 +6,7 @@ export default function SmallCard() {
     <>
       <div className="bg-white rounded-lg mt-2  w-[52%] ml-[12.5%]">
         <span className="font-bold ml-5">Don't Miss</span>
-        <div className="grid grid-cols-4 gap-4 p-5">
+        <div className="grid lg:grid-cols-4 gap-4 p-5 grid-cols-2">
           {Carddata.cardData.map((item) => {
             return (
               <>
@@ -15,7 +15,7 @@ export default function SmallCard() {
                     <img className="rounded-lg h-[15vh]" src={item.image} />
                   </div>
                   <div className="mt-2">
-                    <p className="text-[14px] hover:text-blue-500 cursor-pointer">{item.title}</p>
+                    <p className="md:text-[14px] text-[10px] hover:text-blue-500 cursor-pointer">{item.title}</p>
                   </div>
                 </div>
               </>

@@ -5,7 +5,7 @@ export default function VideoCardContainer({ title }) {
     <>
       <div className="bg-white rounded-lg mt-2  w-[52%] ml-[12.5%]">
         <span className="font-bold ml-5 mt-4">{title}</span>
-        <div className="grid grid-cols-4 gap-4 p-5">
+        <div className="grid lg:grid-cols-4 gap-4 p-5 grid-cols-2">
           <div>
             <div>
               <img
@@ -14,7 +14,7 @@ export default function VideoCardContainer({ title }) {
               />
             </div>
             <div className="mt-2">
-              <p className="text-[14px] hover:text-blue-500 cursor-pointer">This Plant in Australia Covers An Area Four Times the Size of New Delhi!</p>
+              <p className="md:text-[14px] text-[10px] hover:text-blue-500 cursor-pointer">This Plant in Australia Covers An Area Four Times the Size of New Delhi!</p>
             </div>
           </div>
           <div>
@@ -25,7 +25,7 @@ export default function VideoCardContainer({ title }) {
               />
             </div>
             <div className="mt-2">
-              <p className="text-[14px] hover:text-blue-500 cursor-pointer">Brazil Flooding Kills Dozens, Leaves Thousands Homeless</p>
+              <p className="md:text-[14px] text-[10px] hover:text-blue-500 cursor-pointer">Brazil Flooding Kills Dozens, Leaves Thousands Homeless</p>
             </div>
           </div>
           <div>
@@ -36,7 +36,7 @@ export default function VideoCardContainer({ title }) {
               />
             </div>
             <div className="mt-2">
-              <p className="text-[14px] hover:text-blue-500 cursor-pointer">Places Getting Dusty: Little-Known Potential Impact of Climate Change</p>
+              <p className="md:text-[14px] text-[10px] hover:text-blue-500 cursor-pointer">Places Getting Dusty: Little-Known Potential Impact of Climate Change</p>
             </div>
           </div>
           <div>
@@ -47,7 +47,7 @@ export default function VideoCardContainer({ title }) {
               />
             </div>
             <div className="mt-2">
-              <p className="text-[14px] hover:text-blue-500 cursor-pointer">WATCH: Latest India Weather Forecast: June 6</p>
+              <p className="md:text-[14px] text-[10px] hover:text-blue-500 cursor-pointer">WATCH: Latest India Weather Forecast: June 6</p>
             </div>
           </div>
         </div>
