@@ -7,7 +7,7 @@ export default function CardTitle() {
 
   const loadMoreData = (
     <>
-      <div className="grid grid-cols-4 gap-12 mt-8">
+      <div className="grid lg:grid-cols-4 gap-12 mt-8 grid-cols-2">
         {data.data.map((item, i) => {
           return (
             i > 4 && (
@@ -42,8 +42,8 @@ export default function CardTitle() {
 
   return (
     <div className="bg-white w-[52%] ml-[12.5%] rounded-b-lg">
-      <div className="p-4">
-        <div className="grid grid-cols-4 gap-12">
+      <div className="p-4 ">
+        <div className="grid lg:grid-cols-4 gap-12 grid-cols-2">
           {data.data.map((item, i) => {
             return (
               i < 4 && (

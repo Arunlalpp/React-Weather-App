@@ -4,8 +4,8 @@ export default function CardContainer() {
   return (
     <div className=" bg-slate-500">
       <div className="flex flex-row w-3/4 m-auto py-2 gap-3 pt-3">
-        <div class="pt-3 max-w-6xl m-auto flex flex-row bg-white rounded-lg">
-          <div class="rounded-lg shadow-lg  max-w-2xl p-3">
+        <div class="pt-3 max-w-6xl m-auto flex lg:flex-row bg-white rounded-lg  flex-col">
+          <div class="rounded-lg  max-w-2xl p-3">
             <h2 className="text-black text-xl font-bold pb-4">Top Stories</h2>
             <div>
               <img
@@ -21,7 +21,7 @@ export default function CardContainer() {
               <p className="mx-w-1lg text-[#393F40]">
                 With thunderstorms and lightning also on the horizon, the IMD
                 has issued a yellow watch over the region.
-                <a className="text-blue-500" href="">
+                <a className="text-blue-500" href="#">
                   Read More
                 </a>
               </p>
@@ -33,7 +33,7 @@ export default function CardContainer() {
               </button>
             </div>
           </div>
-          <div class="shadow-lg  p-3 mt-10 max-w-[22%]">
+          <div class="p-3 mt-10 lg:max-w-[22%] m-auto max-w[40%]">
             <div>
               <img
                 className="rounded-lg"
