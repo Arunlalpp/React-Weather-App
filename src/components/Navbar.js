@@ -1,24 +1,25 @@
 import React from "react";
-import Searchbar from "./Searchbar";
-import HeaderImg from "../Images/header-1.png";
-import HeaderImage from "../Images/header-2.png";
 import { GiEarthAfricaEurope } from "react-icons/gi";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Navlinks from "./Navlinks";
 import CardContainer from "./CardContainer";
+import HeaderLogo from "../Images/header-2.png";
 import IndianMap from "./IndianMap";
+import Navlinks from "./Navlinks";
+import Searchbar from "./Searchbar";
+import WebsiteLogo from "../Images/header-1.png";
+import Weather from "./Weather";
 export default function Navbar() {
   return (
-    <div>
+    <>
       <div className="bg-[#005986]">
         <div className="max-w-7xl m-auto  flex flex-row items-center justify-between">
           <div className="flex flex-row items-center ml-[0.7rem]">
-            <div className="w-[59px] h-[60px] fill-white">
+            <div className="md:w-[59px] w-[39px] mt-1 h-[60px] fill-white">
               <svg
+                className="md:mt-0 mt-[0.6rem]"
                 set="nav"
                 name="twc-logo"
                 theme="light"
-                class="Icon--icon--3wCKh Icon--lightTheme--3NMAI MainMenuHeader--twcLogo--1oRKo"
                 data-testid="Icon"
                 aria-hidden="true"
                 role="img"
@@ -31,17 +32,20 @@ export default function Navbar() {
                 ></path>
               </svg>
             </div>
-            <div className="w-[150px] h-[30px] px-[0.6rem]  border-r-2 ml-[0.5rem] mt-[0.4rem]">
-              <img src={HeaderImage} />
+            <div className="w-[150px] h-[30px] px-[0.6rem]  border-r-2 ml-[0.5rem] mt-[0.4rem] lg:block hidden">
+              <img src={WebsiteLogo} />
             </div>
-            <div className="w-[155px] px-4 h-auto">
-              <img src={HeaderImg} />
+            <div className="lg:w-[155px] w-[116px] px-4 h-auto md:p-0 p-[0.5rem]">
+              <img src={HeaderLogo} />
             </div>
           </div>
           <div className="flex flex-row">
             <Searchbar />
           </div>
-          <div className="flex flex-row items-center justify-between mr-[2rem] mt-1">
+          <div className="">
+          <GiHamburgerMenu className="w-[31px] h-[80px] text-white" />
+          </div>
+          <div className="md:flex flex-row items-center justify-between mr-[2rem] mt-1 hidden">
             <div>
               <GiEarthAfricaEurope className="w-[28px] h-[80px] text-white" />
             </div>
@@ -68,13 +72,13 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-        <div className="bg-[#337A9E] p-2">
-          <span className="text-[#337A9E]">.</span>
+        <div className="bg-[#337A9E] p-5 md:block hidden">
         </div>
       </div>
       <Navlinks />
+      <Weather />
       <CardContainer />
       <IndianMap />
-    </div>
+    </>
   );
 }

@@ -12,7 +12,6 @@ export default function CardTitle() {
           return (
             i > 4 && (
               <>
-                <div className="">
                   <div>
                     <img className="rounded-lg h-[15vh]" src={item.image} />
                   </div>
@@ -21,7 +20,6 @@ export default function CardTitle() {
                       {item.title}
                     </p>
                   </div>
-                </div>
               </>
             )
           );
@@ -41,13 +39,12 @@ export default function CardTitle() {
   );
 
   return (
-    <div className="bg-white w-[52%] ml-[12.5%] rounded-b-lg">
+    <div className="bg-white lg:w-[52%] lg:ml-[12.5%] w-9xl ml-[3.3%] rounded-b-lg">
       <div className="p-4 ">
-        <div className="grid lg:grid-cols-4 gap-12 grid-cols-2">
+        <div className="grid grid-cols-4 lg:gap-12 gap-2">
           {data.data.map((item, i) => {
             return (
               i < 4 && (
-                <>
                   <div>
                     <div>
                       <img className="rounded-lg h-[15vh]" src={item.image} />
@@ -56,7 +53,6 @@ export default function CardTitle() {
                       <p>{item.title}</p>
                     </div>
                   </div>
-                </>
               )
             );
           })}
