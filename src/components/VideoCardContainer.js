@@ -52,7 +52,7 @@ export default function VideoCardContainer({ title }) {
             </div>
           </div>
         </div>
-        <div className="p-5">
+        <div className="p-5 md:hidden">
           <div>
             <div className="w-full relative">
               <img
@@ -66,9 +66,9 @@ export default function VideoCardContainer({ title }) {
             </div>
           </div>
       </div>
-      <button className=" ml-6 mb-4 inline-block mt-2 rounded-full px-6 py-2.5 bg-[#1B4DE4] text-white font-medium text-xs leading-tight  hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Show more</button>
+      <button className="md:hidden block ml-6 mb-4 inline-block mt-2 rounded-full px-6 py-2.5 bg-[#1B4DE4] text-white font-medium text-xs leading-tight  hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Show more</button>
       </div>
-        <button className="md:block hidden ml-6 mb-4 inline-block mt-6 rounded-full px-6 py-2.5 bg-[#1B4DE4] text-white font-medium text-xs leading-tight  hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Show more</button>
+        <button className="md:block  ml-6 mb-4 inline-block mt-6 rounded-full px-6 py-2.5 bg-[#1B4DE4] text-white font-medium text-xs leading-tight  hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Show more</button>
     </>
   );
 }

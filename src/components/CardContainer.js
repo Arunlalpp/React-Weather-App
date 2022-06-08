@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CardContainer() {
   return (
-    <div className=" bg-slate-500 pt-3 pb-3">
+    <div className=" bg-slate-500 md:p-0 pt-3 pb-3">
       <div className="md:flex flex-row w-8xl m-auto py-2 gap-3 pt-3 md:block hidden">
         <div class="pt-3 max-w-6xl m-auto flex lg:flex-row bg-white rounded-lg  flex-col">
           <div class="rounded-lg  max-w-2xl p-3 md:block hidden">

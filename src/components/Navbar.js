@@ -11,8 +11,8 @@ import Weather from "./Weather";
 export default function Navbar() {
   return (
     <>
-      <div className="bg-[#005986] w-[100vw] flex flex-row justify-center items-center">
-        <div className="flex flex-row items-center md:ml-[0.7rem] ml-0">
+      <div className="bg-[#005986] w-[100vw] flex flex-row justify-center items-center md:h-auto h-[3.8rem] md:justify-evenly sticky top-0 md:static">
+        <div className="flex flex-row items-center ml-0">
           <div className="md:w-[59px] w-[39px] mt-1 h-[60px] fill-white">
             <svg
               className="md:mt-0 mt-[0.6rem]"
@@ -34,7 +34,7 @@ export default function Navbar() {
           <div className="w-[150px] h-[30px] px-[0.6rem]  border-r-2 ml-[0.5rem] mt-[0.4rem] lg:block hidden">
             <img src={HeaderLogo} />
           </div>
-          <div className="lg:w-[155px] w-[116px] px-4 h-auto md:p-0 p-[0.5rem]">
+          <div className="lg:w-[155px] w-[116px] md:px-4 h-auto md:p-0 p-[0.5rem]">
             <img src={WebsiteLogo} />
           </div>
         </div>
@@ -42,7 +42,7 @@ export default function Navbar() {
         <div className="md:hidden ml-[0.6rem]">
           <GiHamburgerMenu className="w-[31px] h-[80px] text-white" />
         </div>
-        <div className="md:flex flex-row items-center justify-between mr-[2rem] mt-1 hidden">
+        <div className="md:flex flex-row items-center justify-between hidden">
           <div>
             <GiEarthAfricaEurope className="w-[28px] h-[80px] text-white" />
           </div>
@@ -68,10 +68,8 @@ export default function Navbar() {
             <GiHamburgerMenu className="w-[31px] h-[80px] text-white" />
           </div>
         </div>
-
-        
       </div>
-      <div className="bg-[#337A9E] p-5 md:block hidden"></div>  
+      <div className="bg-[#337A9E] p-5 md:block hidden"></div>
       <Navlinks />
       <Weather />
       <CardContainer />
