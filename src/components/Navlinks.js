@@ -3,7 +3,7 @@ import React from "react";
 export default function Navlinks() {
   return (
     <>
-      <div className="bg-[#003550]">
+      <div className="bg-[#003550] md:block hidden">
         <div className="max-w-[73rem] m-auto px-[0.5rem] py-2 flex flex-row justify-between text-white">
           <span className="cursor-pointer hover:border-b-4 ">Today</span>
           <span className="cursor-pointer">Hourly</span>
