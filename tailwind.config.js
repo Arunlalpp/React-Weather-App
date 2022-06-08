@@ -12,5 +12,7 @@ module.exports = {
   variants: {
     boxShadow: ['responsive', 'hover', 'focus'],  
  },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 }
