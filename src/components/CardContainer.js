@@ -3,7 +3,7 @@ import React from "react";
 export default function CardContainer() {
   return (
     <div className=" bg-slate-500">
-      <div className="flex flex-row w-3/4 m-auto py-2 gap-3 pt-3">
+      <div className="flex flex-row w-8xl m-auto py-2 gap-3 pt-3">
         <div class="pt-3 max-w-6xl m-auto flex lg:flex-row bg-white rounded-lg  flex-col">
           <div class="rounded-lg  max-w-2xl p-3">
             <h2 className="text-black text-xl font-bold pb-4">Top Stories</h2>
