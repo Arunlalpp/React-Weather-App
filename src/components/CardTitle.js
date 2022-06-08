@@ -14,7 +14,7 @@ export default function CardTitle() {
               <>
                 <div>
                   <div>
-                    <img className="rounded-lg h-[15vh]" src={item.image} />
+                    <img className="rounded-lg md:h-[15vh]" src={item.image} />
                   </div>
                   <div className="mt-3">
                     <p className="md:text-[14px] text-[10px] hover:text-blue-500 cursor-pointer">
@@ -43,15 +43,15 @@ export default function CardTitle() {
   return (
     <div className="bg-white lg:w-[52%] lg:ml-[12.5%] w-9xl ml-[3.3%] rounded-b-lg">
       <div className="p-4 ">
-        <div className="grid grid-cols-4 lg:gap-12 gap-2  ">
+        <div className="md:grid grid-cols-4 md:gap-12 flex flex-row gap-2 overflow-auto overflow-y-hidden scrollbar-hide scroll-smooth">
           {data.data.map((item, i) => {
             return (
               i < 4 && (
-                <div>
+                <div  className="md:min-w-[0] min-w-[40vw]">
                   <div>
-                    <img className="rounded-lg h-[15vh]" src={item.image} />
+                    <img className="rounded-lg md:h-[15vh] w-[100%]" src={item.image} />
                   </div>
-                  <div className="mt-3 hover:text-blue-500 cursor-pointer md:text-[14px] text-[10px]  ">
+                  <div className="mt-3 hover:text-blue-500 cursor-pointer md:text-[14px] text-[13px]  ">
                     <p>{item.title}</p>
                   </div>
                 </div>
