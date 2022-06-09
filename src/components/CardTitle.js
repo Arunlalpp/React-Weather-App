@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import data from "../data";
-import { useState } from "react";
 
 const CARD_FIRST_ROW_COUNT = 4;
 
