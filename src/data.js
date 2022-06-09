@@ -1,5 +1,4 @@
-export default {
-  "data": [
+const data = [
     {
       "title": "Heatwaves Return! To Grip Parts of Maharashtra, Madhya Pradesh",
       "image": "https://s.w-x.co/in-heat_14.jpg?crop=16:9&width=640&format=pjpg&auto=webp&quality=60"
@@ -52,5 +51,5 @@ export default {
         "title": "Weekly Recap (May 30-June 3): Top Weather, Science, Space and Environment Stories of the Week",
         "image": "https://s.w-x.co/in-heavy%20rains%20%281%29.jpg?crop=16:9&width=160&format=pjpg&auto=webp&quality=60"
     },
-  ]
-}
+  ];
+  export default data;

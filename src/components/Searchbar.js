@@ -4,7 +4,7 @@ import { BsCloudSun } from "react-icons/bs";
 
 export default function Searchbar() {
   return (
-    <div class="md:mb-3 mb-0 xl:w-96 w-[43vw] md:w-[24vw] group md:mt-[0.5rem] md:pb-1 md:ml-[4rem]">
+    <div class="md:mb-3 mb-[14px] xl:w-96 w-[43vw] md:w-[24vw] group md:mt-[0.5rem] md:pb-1 md:ml-[4rem]">
       <div class="input-group relative flex items-stretch w-full z-10 md:pb-1 md:h-[1.9em]">
         <input
           type="search"

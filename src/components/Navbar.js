@@ -3,7 +3,6 @@ import { GiEarthAfricaEurope } from "react-icons/gi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import CardContainer from "./CardContainer";
 import HeaderLogo from "../Images/header-2.png";
-import IndianMap from "./IndianMap";
 import Navlinks from "./Navlinks";
 import Searchbar from "./Searchbar";
 import WebsiteLogo from "../Images/header-1.png";
@@ -11,12 +10,12 @@ import Weather from "./Weather";
 export default function Navbar() {
   return (
     <>
-      <div className="bg-[#005986] w-full">
-        <div className="flex flex-row justify-center items-center md:h-auto h-[3.8rem] md:justify-evenly sticky top-0 md:static md:max-w-[95%]">
-          <div className="flex items-center w-[26%] ml-0">
-            <div className="md:w-[60px] w-[39px]  h-[60px] fill-white md:ml-1.5 ml-0">
+      <div className="md:bg-[#005986] w-full  bg-gradient-to-b from-[#005986] violet-[#005986] to-[#005986]">
+        <div className="flex flex-row justify-center items-center md:h-auto h-[5.3rem] md:justify-evenly sticky top-0 md:static md:max-w-[95%]">
+          <div className="flex items-center md:w-[26%] ml-0">
+            <div className="md:w-[60px] w-[45px]  h-[60px] fill-white md:ml-1.5 ml-0">
               <svg
-                className="md:mt-0 mt-[0.6rem]"
+                className="md:mt-0"
                 set="nav"
                 name="twc-logo"
                 theme="light"
@@ -35,12 +34,12 @@ export default function Navbar() {
             <div className="w-[150px] h-[30px] px-[0.6rem]  border-r-2 ml-[0.5rem] mt-[0.4rem] lg:block hidden">
               <img src={HeaderLogo} />
             </div>
-            <div className="lg:w-[155px] w-[116px] md:px-4 h-auto md:p-0 p-[0.5rem]">
+            <div className="lg:w-[155px] w-[116px] md:px-4 h-auto md:p-0 p-[0.5rem] md:mb-0 mb-[0.8rem]">
               <img src={WebsiteLogo} />
             </div>
           </div>
           <Searchbar />
-          <div className="md:hidden ml-[0.6rem]">
+          <div className="md:hidden ml-[0.6rem] md:mb-[0] mb-[14px]">
             <GiHamburgerMenu className="w-[31px] h-[80px] text-white cursor-pointer" />
           </div>
           <div className="md:flex flex-row items-center justify-between hidden">
@@ -75,7 +74,6 @@ export default function Navbar() {
       <Navlinks />
       <Weather />
       <CardContainer />
-      <IndianMap />
     </>
   );
 }
