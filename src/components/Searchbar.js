@@ -4,14 +4,14 @@ import { BsCloudSun } from "react-icons/bs";
 
 export default function Searchbar() {
   return (
-    <div class="md:mb-3 mb-0 xl:w-96 w-[43vw] md:w-[24vw] group md:mt-[0.5rem] md:pb-1">
+    <div class="md:mb-3 mb-0 xl:w-96 w-[43vw] md:w-[24vw] group md:mt-[0.5rem] md:pb-1 md:ml-[4rem]">
       <div class="input-group relative flex items-stretch w-full z-10 md:pb-1 md:h-[1.9em]">
         <input
           type="search"
           class="relative flex-auto focus:outline-2  outline-white text-center min-w-0  placeholder-white block w-full  md:p-[1.2rem] p-1 md:text-[16px] text-[13px]  font-normal text-white bg-[#337A9E] rounded-3xl m-0"
           placeholder="Search City or Postcode "
         />
-        <div className="absolute text-white f left-[92%] top-[28%]">
+        <div className="absolute text-white  md:left-[92%] md:top-[28%] left-[88%] top-[25%]">
           <VscSearch />
         </div>
       </div>
