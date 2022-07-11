@@ -1,16 +1,19 @@
 import React from "react";
+import IndianMap from "./IndianMap";
+import TopStories from "./TopStories";
 
 export default function CardContainer() {
   return (
-    <div className=" bg-slate-500">
-      <div className="flex flex-row w-3/4 m-auto py-2 gap-3">
-        <div class="pt-3 max-w-6xl m-auto flex flex-row bg-white rounded-lg">
-          <div class="rounded-lg shadow-lg  max-w-2xl p-3">
-            <h2 className="text-black text-xl font-bold">Top Stories</h2>
+    <div className="md:p-0 pt-3 pb-3 bg-gradient-to-b from-[#4092B0] vi-[#D3EBEC] to-white">
+      <div className="md:flex flex-row w-8xl m-auto py-2 gap-3 pt-3 md\:block hidden">
+        <div class="pt-3 max-w-6xl m-auto flex lg:flex-row bg-white rounded-lg  flex-col">
+          <div class="rounded-lg  max-w-2xl p-3 md:block hidden">
+            <h2 className="text-black text-xl font-bold pb-4">Top Stories</h2>
             <div>
               <img
                 className="rounded-lg"
                 src="https://s.w-x.co/util/image/w/in-june_4.jpg?crop=16:9&width=980&format=pjpg&auto=webp&quality=60"
+                alt="top-stories"
               />
             </div>
             <div class="mt-3">
@@ -21,7 +24,7 @@ export default function CardContainer() {
               <p className="mx-w-1lg text-[#393F40]">
                 With thunderstorms and lightning also on the horizon, the IMD
                 has issued a yellow watch over the region.
-                <a className="text-blue-500" href="">
+                <a className="text-blue-500" href="/">
                   Read More
                 </a>
               </p>
@@ -33,11 +36,12 @@ export default function CardContainer() {
               </button>
             </div>
           </div>
-          <div class="shadow-lg  p-3 mt-6 max-w-[22%]">
+          <div class="p-3 mt-10 lg:max-w-[22%] m-auto max-w[40%] md:block hidden">
             <div>
               <img
                 className="rounded-lg"
                 src="https://s.w-x.co/util/image/w/in-supriya_patil.jpg?crop=16:9&width=980&format=pjpg&auto=webp&quality=60"
+                alt="man-unberlla"
               />
             </div>
             <div className="mt-2 mb-4">
@@ -49,6 +53,7 @@ export default function CardContainer() {
               <img
                 className="rounded-lg"
                 src="https://s.w-x.co/util/image/w/in-cycle_mangalore.jpg?crop=16:9&width=980&format=pjpg&auto=webp&quality=60"
+                alt="fish"
               />
             </div>
             <div className="mt-2 mb-4">
@@ -60,6 +65,7 @@ export default function CardContainer() {
               <img
                 className="rounded-lg"
                 src="https://s.w-x.co/util/image/w/in-climate_change_3.jpg?crop=16:9&width=980&format=pjpg&auto=webp&quality=60"
+                alt="crowd"
               />
             </div>
             <div className="mt-2 mb-4">
@@ -69,13 +75,18 @@ export default function CardContainer() {
             </div>
           </div>
         </div>
-        <div className="bg-white rounded-lg w-3/5  h-[15%]">
+        <div className="bg-white rounded-lg w-[64%]  h-[15%] md:block hidden">
           <div className="p-5">
             <span className="font-bold text-lg mb-0 mt-4 mr-4">Stay Safe</span>
-            <img src="https://s.w-x.co/promo-modules-units-features.png?crop=2.85:1&width=320&format=pjpg&auto=webp&quality=60" />
+            <img
+              src="https://s.w-x.co/promo-modules-units-features.png?crop=2.85:1&width=320&format=pjpg&auto=webp&quality=60"
+              alt="man"
+            />
           </div>
         </div>
       </div>
+      <TopStories />
+      <IndianMap />
     </div>
   );
 }

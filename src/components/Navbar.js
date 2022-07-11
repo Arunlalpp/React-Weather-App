@@ -1,27 +1,24 @@
 import React from "react";
-import Searchbar from "./Searchbar";
-import HeaderImg from "../Images/header-1.png";
-import HeaderImage from "../Images/header-2.png";
 import { GiEarthAfricaEurope } from "react-icons/gi";
-import { BiDownArrow } from "react-icons/bi";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Navlinks from "./Navlinks";
 import CardContainer from "./CardContainer";
-import IndianMap from "./IndianMap";
-import Footer from "./Footer";
-import CardTitle from "./CardTitle";
+import HeaderLogo from "../Images/header-2.png";
+import Navlinks from "./Navlinks";
+import Searchbar from "./Searchbar";
+import WebsiteLogo from "../Images/header-1.png";
+import Weather from "./Weather";
 export default function Navbar() {
   return (
-    <div>
-      <div className="bg-[#005986]">
-        <div className="max-w-7xl m-auto p-2 flex flex-row items-center justify-between">
-          <div className="flex flex-row items-center">
-            <div className="w-[60px] h-[60px] fill-white">
+    <>
+      <div className="md:bg-[#005986] w-full  bg-gradient-to-b from-[#005986] violet-[#005986] to-[#005986]">
+        <div className="flex flex-row justify-center items-center md:h-auto h-[5.3rem] md:justify-evenly sticky top-0 md:static md:max-w-[95%]">
+          <div className="flex items-center md:w-[26%] ml-0">
+            <div className="md:w-[60px] w-[45px]  h-[60px] fill-white md:ml-1.5 ml-0">
               <svg
+                className="md:mt-0"
                 set="nav"
                 name="twc-logo"
                 theme="light"
-                class="Icon--icon--3wCKh Icon--lightTheme--3NMAI MainMenuHeader--twcLogo--1oRKo"
                 data-testid="Icon"
                 aria-hidden="true"
                 role="img"
@@ -34,35 +31,49 @@ export default function Navbar() {
                 ></path>
               </svg>
             </div>
-            <div className="w-[150px] h-[30px] px-3  border-r-2">
-              <img src={HeaderImage} />
+            <div className="w-[150px] h-[30px] px-[0.6rem]  border-r-2 ml-[0.5rem] mt-[0.4rem] lg:block hidden">
+              <img src={HeaderLogo} />
             </div>
-            <div className="w-[150px] px-4">
-              <img src={HeaderImg} />
+            <div className="lg:w-[155px] w-[116px] md:px-4 h-auto md:p-0 p-[0.5rem] md:mb-0 mb-[0.8rem]">
+              <img src={WebsiteLogo} />
             </div>
           </div>
-          <div className="flex flex-row">
-            <Searchbar />
+          <Searchbar />
+          <div className="md:hidden ml-[0.6rem] md:mb-[0] mb-[14px]">
+            <GiHamburgerMenu className="w-[31px] h-[80px] text-white cursor-pointer" />
           </div>
-          <div className="flex flex-row items-center justify-between">
-            <GiEarthAfricaEurope className="w-[30px] h-[80px] text-white" />
-            <div className="border-r-2 px-1 text-white text-[15px]">
+          <div className="md:flex flex-row items-center justify-between hidden">
+            <div>
+              <GiEarthAfricaEurope className="w-[28px] h-[80px] text-white cursor-pointer" />
+            </div>
+            <div className="border-r-2 px-2 text-white text-[16px]">
               <h1>IN</h1>
             </div>
-            <span className="px-2 text-white">°C</span>
-            <div>
-              <BiDownArrow className="w-[20px] h-[50px] text-white" />
+            <span className="px-3 text-white cursor-pointer">°C</span>
+            <div className="w-[17px] h-[19px] fill-white cursor-pointer">
+              <svg
+                set="ui"
+                name="triangle-down"
+                class="styles--buttonIcon--nMAqA Icon--icon--3wCKh"
+                data-testid="Icon"
+                aria-hidden="true"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <title>Arrow down</title>
+                <path d="M23.765 5.167h-23.53l11.75 13.666 11.779-13.666z"></path>
+              </svg>
             </div>
-            <div className="pr-4">
-              <GiHamburgerMenu className="w-[30px] h-[80px] text-white" />
+            <div className="pl-5">
+              <GiHamburgerMenu className="w-[31px] h-[80px] text-white cursor-pointer" />
             </div>
           </div>
         </div>
       </div>
+      <div className="bg-[#337A9E] p-5 md:block hidden"></div>
       <Navlinks />
+      <Weather />
       <CardContainer />
-      <IndianMap />
-      <Footer />
-    </div>
+    </>
   );
 }
